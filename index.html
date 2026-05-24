@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoot Your Heart 💖</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-ui">Hearts Shot: <span id="score">0</span> / 10</div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="welcome-screen" class="screen">
+      <h1>Catch My Heart</h1>
+      <p>
+        Buktikan seberapa cepat kamu bisa menangkap detak cintaku. Tembak 10
+        hati yang muncul untuk melihat pesan rahasia dariku! 💘
+      </p>
+      <button class="btn" onclick="startGame()">Mulai Main</button>
+    </div>
+
+    <div id="ending-screen" class="screen hidden">
+      <h1>I Love You! 💖</h1>
+      <p>
+        Kamu berhasil menangkap seluruh cintaku! Dari awal kita HTS-an, aku
+        ngerasa kamu bener-bener orang yang tepat. Jadi...
+      </p>
+      <h3 style="color: #ff4d6d; margin-bottom: 20px">
+        Mau kan naik level jadi pacarku? 🥰
+      </h3>
+      <div class="btn-group">
+        <button class="btn" onclick="celebrate()">Mau Banget! ✨</button>
+        <button class="btn" id="btn-no" onmouseover="moveNoButton()">
+          Nggak Mau 😜
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
